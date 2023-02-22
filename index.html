@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3 p-3 bg-light">
+            <div class="col-6"><span><i class="fa-brands fa-instagram"></i></i></span> Instagram</div>
+            <div class="col-6 d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-success p-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <h6>Caption:</h6>
+                                </div>
+                                <div class="row">
+                                    <textarea placeholder="Add your caption of your post here">
+                                </textarea>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="btn-group me-2 col-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="fa-solid fa-camera"></i> </button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <!-- <i class="fa-regular fa-gear"></i> -->
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#Grid"
+                            type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                                class="fa-solid fa-table-cells"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Single"
+                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                                class="fa-regular fa-image"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Grid Portion -->
+            <div class="tab-pane fade show active" id="Grid" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/2965205/pexels-photo-2965205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/2774140/pexels-photo-2774140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/1227513/pexels-photo-1227513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/1553963/pexels-photo-1553963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-0">
+                        <div class="card">
+                            <img class="img-fit"
+                                src="https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Portion -->
+        <div class="tab-pane fade" id="Single" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My first photo</h4>
+                                <span class="text-muted">01/01</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">55 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My Second photo</h4>
+                                <span class="text-muted">01/02</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2965205/pexels-photo-2965205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">89 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My Third photo</h4>
+                                <span class="text-muted">01/03</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">84 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My fourth photo</h4>
+                                <span class="text-muted">01/04</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2774140/pexels-photo-2774140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">23 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My fith photo</h4>
+                                <span class="text-muted">01/05</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/1227513/pexels-photo-1227513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">33 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My Sixth photo</h4>
+                                <span class="text-muted">01/06</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">31 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My Seventh photo</h4>
+                                <span class="text-muted">01/07</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/1553963/pexels-photo-1553963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">33 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My Eighth photo</h4>
+                                <span class="text-muted">01/08</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">53 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto pt-3">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between">
+                                <h4>My Ninth photo</h4>
+                                <span class="text-muted">01/09</span>
+                            </div>
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">42 Likes</h5>
+                                <p class="card-text">Third post. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="card-text"><span class="text-muted mr-2"><i
+                                            class="far fa-heart fa-1x"></i></span><span
+                                        class="text-muted">Comment...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
